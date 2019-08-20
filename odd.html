@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Odd Number Generator</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Odd Number Generator</h1>
+
+            <h3>Enter a number from 0 to 100. </h3>
+            
+            <div class="input">
+                <input id="inputVal" type="text" />
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="submit" onclick="getOdd()">Enter</button>
+                <button type="button" class="reset" onclick="reset()">Reset</button>
+            </div>
+
+            <div id="error" style="display: none;">Number cannot exceed 100.</div>
+
+            <div class="output" style="display: none;">
+                <h3>Odd numbers in between:</h3>
+                <div id="outputVal"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="odd.js"></script>
+</body>
+
+</html>
